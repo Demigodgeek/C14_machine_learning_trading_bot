@@ -49,8 +49,7 @@ This challenge compared the 4 performances of two machine learning models by ana
          1.0       0.56      0.96      0.71      2288
 
     accuracy                           0.55      4092
-   macro avg       0.49      0.50      0.39      4092
-weighted avg       0.50      0.55      0.43      4092
+    
 
   * The accuracy score for the SVC model is 0.55, meaning that the model correctly predicted the direction of the stock price movement for 55% of the test dataset.
 
@@ -68,8 +67,7 @@ weighted avg       0.50      0.55      0.43      4092
          1.0       0.56      0.98      0.71      2211
 
     accuracy                           0.56      3943
-   macro avg       0.50      0.50      0.38      3943
-weighted avg       0.51      0.56      0.42      3943
+   
 
   For the tuned algorithm with a larger training dataset, we can see that 
   * the accuracy has slightly increased to 0.56 compared to the baseline SVC model. 
@@ -91,8 +89,7 @@ weighted avg       0.51      0.56      0.42      3943
          1.0       0.56      0.94      0.70      2162
 
     accuracy                           0.55      3856
-   macro avg       0.47      0.49      0.39      3856
-weighted avg       0.48      0.55      0.43      3856
+    
   
   For the tuned algorithm with larger short window and long window, we can see that 
   * The precision is 0.38 for the −1 class and 0.56 for the 1 class. The recall is 0.05 for the −1 class and 0.94 for the 1 class. Based on the much higher recall, the model is better at predicting the 1 class than the −1 class.
@@ -113,12 +110,10 @@ weighted avg       0.48      0.55      0.43      3856
          1.0       0.56      0.66      0.61      2288
 
     accuracy                           0.52      4092
-   macro avg       0.50      0.50      0.49      4092
-weighted avg       0.51      0.52      0.51      4092
-
+    
   * The performance of the LogisticRegression model is worse than the Baseline SVC model. The accuracy score is lower, at 0.52 compared to 0.55 for the Baseline SVC model. The precision and recall scores for both the -1 and 1 classes are also lower for the Logistic Regression model, indicating that it is less effective at predicting both price movements.
 
-![actual_vs_strategy_returns_lr](actual_vs_strategy_returns_lr)
+![actual_vs_strategy_returns_lr](actual_vs_strategy_returns_lr.png)
 
    * According to the plot, the LogisticRegression model performed even worse than either the baseline SVC model or the tuned period version. It performed same as the tuned windows version, making they two became the worst amount the four. At the beginning of the period it performed well until ealy in 2017. Then the model made strategy returns underperformed the actual returns, especially from early 2020 to the end of the peoriod, the strategy returns became pretty lower than actual returns.
 
